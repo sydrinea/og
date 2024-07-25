@@ -1,4 +1,7 @@
-export default function NotFound() {
+import Footer from "@/components/Footer";
+import Image from "next/image";
+
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm text-text lg:flex">
@@ -16,6 +19,14 @@ export default function NotFound() {
           </a>
         </div>
       </div>
+      <Image
+        className="rounded-full"
+        src="https://avatars.githubusercontent.com/u/68250402?v=4"
+        height={128}
+        width={128}
+        alt="Sydney Newmark profile picture"
+      />
+      <Footer />
     </main>
   );
 }

@@ -6,6 +6,14 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inclusive-sans)"],
+        mono: ["var(--font-recursive-mono)"],
+      },
+    },
+  },
   plugins: [require("@catppuccin/tailwindcss")],
 };
 export default config;
