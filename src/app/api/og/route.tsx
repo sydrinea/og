@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 
+export const runtime = "edge";
+
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;
   const title = params.get("title");
@@ -26,8 +28,9 @@ export async function GET(request: Request) {
     );
   }
 
-  console.log(title);
-  console.log(description);
+  const font = await fetch(
+    "https://og.sydneyn.dev/static/InclusiveSans.ttf"
+  ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
     (
@@ -52,7 +55,7 @@ export async function GET(request: Request) {
             position: "absolute",
             bottom: 0,
             right: 0,
-            margin: "20px",
+            margin: "50px",
           }}
           width={50}
           height={50}
@@ -71,7 +74,7 @@ export async function GET(request: Request) {
             bottom: 0,
             left: 0,
             color: "#ea76cb",
-            margin: "20px",
+            margin: "50px",
             fontSize: 30,
             fontWeight: "bolder",
           }}
@@ -83,6 +86,13 @@ export async function GET(request: Request) {
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: "Inclusive Sans",
+          data: font,
+          style: "normal",
+        },
+      ],
     }
   );
 }
