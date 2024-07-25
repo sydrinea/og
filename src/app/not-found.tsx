@@ -8,7 +8,7 @@ export default function NotFound() {
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://sydneyn.dev"
+            href="https://github.com/cecelot"
             target="_blank"
             rel="noopener noreferrer"
           >
