@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="flex flex-col mt-3 text-center">
       <div className="flex mx-auto mb-4">
         <p className="text-text">
-          OpenGraph image generation tool for{" "}
+          Open Graph image generation tool for{" "}
           <a
             href="https://sydneyn.dev"
             className="text-blue hover:underline underline-offset-2 transition-all ease-in-out duration-200"
