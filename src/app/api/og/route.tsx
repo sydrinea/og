@@ -47,16 +47,22 @@ export async function GET(request: Request) {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          style={{ borderRadius: "100%" }}
-          width={150}
-          height={150}
+          style={{
+            borderRadius: "100%",
+            position: "absolute",
+            bottom: 0,
+            right: 0,
+            margin: "20px",
+          }}
+          width={50}
+          height={50}
           src="https://avatars.githubusercontent.com/u/68250402?v=4"
-          alt="sydneyn profile picture"
+          alt="Sydney Newmark"
         />
-        <p style={{ color: "#4c4f69", fontSize: 50, fontWeight: "bolder" }}>
+        <p style={{ color: "#4c4f69", fontSize: 45, fontWeight: "bolder" }}>
           {title}
         </p>
-        <p style={{ color: "#6c6f85", fontSize: 20, fontWeight: "lighter" }}>
+        <p style={{ color: "#6c6f85", fontSize: 30, fontWeight: "lighter" }}>
           {description}
         </p>
         <p
@@ -66,7 +72,7 @@ export async function GET(request: Request) {
             left: 0,
             color: "#ea76cb",
             margin: "20px",
-            fontSize: 18,
+            fontSize: 30,
             fontWeight: "bolder",
           }}
         >
