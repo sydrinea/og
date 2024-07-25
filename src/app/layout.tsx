@@ -16,8 +16,15 @@ const recursiveMono = Recursive({
 });
 
 export const metadata: Metadata = {
-  title: "OpenGraph Images",
-  description: "OpenGraph image generator for sydneyn.dev",
+  title: "og:image for Sydney Newmark",
+  description: "custom social media embeds",
+  openGraph: {
+    images: [
+      `https://og.sydneyn.dev/api/og?title=${encodeURIComponent(
+        "og:image"
+      )}&description=${encodeURIComponent("custom social media embeds")}`,
+    ],
+  },
 };
 
 export const viewport: Viewport = {
