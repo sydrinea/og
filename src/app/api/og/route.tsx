@@ -71,7 +71,7 @@ export async function GET(request: Request) {
         <p
           style={{
             position: "absolute",
-            bottom: 0,
+            bottom: 3,
             left: 0,
             color: "#ea76cb",
             margin: "50px",
