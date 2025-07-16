@@ -73,7 +73,7 @@ export async function GET(request: Request) {
             position: "absolute",
             bottom: 3,
             left: 0,
-            color: "#ea76cb",
+            color: "#7287fd",
             margin: "50px",
             fontSize: 30,
             fontWeight: "bolder",
