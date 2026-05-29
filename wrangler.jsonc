@@ -1,0 +1,12 @@
+{
+  "name": "og",
+  "main": "src/worker.ts",
+  "compatibility_date": "2025-05-29",
+  "compatibility_flags": ["nodejs_compat"],
+  "r2_buckets": [
+    {
+      "binding": "ONYX",
+      "bucket_name": "onyx"
+    }
+  ]
+}
