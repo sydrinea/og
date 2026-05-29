@@ -1,5 +1,5 @@
 {
-  "name": "og",
+  "name": "sydneyn-dev-og",
   "main": "src/worker.ts",
   "compatibility_date": "2025-05-29",
   "compatibility_flags": ["nodejs_compat"],
